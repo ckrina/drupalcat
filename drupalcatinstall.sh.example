@@ -10,6 +10,6 @@ drush -y make drupalcat.make docroot
 cd docroot/profiles
 ln -s ../../drupalcat drupalcat
 # Here you have to change user/pass to match your mysql user
-drush -y si --db-url=mysql://user:pass@localhost/drupalcat  --locale=ca --account-pass=admin drupalcat
+drush -y si --db-url=mysql://root:root@localhost/drupalcat  --locale=ca --account-pass=admin drupalcat
 # login as admin after the install.
 drush uli
